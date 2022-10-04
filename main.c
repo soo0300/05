@@ -1,17 +1,32 @@
-int main(int argc, char *argv[]) {
-   
-   char c;
-   int count=0;
-   
-   printf("문자열을 입력하세요:");
+#include<stdio.h>
+#include<stdlib.h>
 
-   while((c=getchar())!='\n'){
-      /*scanf("%c",&c);*/
-      if('0'<=c && c >='9'){
-         count+=1;
-      }
-   }
-   printf("the number of digits is %i",count);
-   return 0;
+int main(int argc, char *argv[]) {
+	
+	int a,b;
+	char c;
+	
+	printf("Enter the calculation:"); 
+	
+	scanf("%d %c %d",&a,&c,&b);
+	
+	if(c=='+'){
+		printf("=%d",a+b);
+	}
+	
+	else if(c=='-'){
+		printf("=%d",a-b);
+	
+	}
+	else if(c=='*'){
+		printf("=%d",a*b);
+	}
+			
+	else if(c=='/'){
+		printf("=%d",a/b);
+	}
+	
+	 return 0;
+	
 }
  
