@@ -1,17 +1,17 @@
-#include <stdio.h>
-#include <stdlib.h>
-
 int main(int argc, char *argv[]) {
-	int n;
-	printf("정수 하나를 입력하시오: ");
-	scanf("%d",&n);
-	
-	if(n<0){
-		printf("절대값은 %d입니다",-n);
-	}else{
-		printf("절대값은 %d입니다",n);
-	}
-	return 0;
+   
+   char c;
+   int count=0;
+   
+   printf("문자열을 입력하세요:");
+
+   while((c=getchar())!='\n'){
+      /*scanf("%c",&c);*/
+      if('0'<=c && c >='9'){
+         count+=1;
+      }
+   }
+   printf("the number of digits is %i",count);
+   return 0;
 }
  
-
